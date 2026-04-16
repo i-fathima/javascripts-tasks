@@ -1,0 +1,1 @@
+﻿export function task146() { const num1=10, num2=5, op='+'; let result; switch(op) { case '+': result = num1 + num2; break; case '-': result = num1 - num2; break; case '*': result = num1 * num2; break; case '/': result = num1 / num2; break; default: result = 'Invalid'; } alert('Task 146: '+num1+op+num2+' = '+result); }

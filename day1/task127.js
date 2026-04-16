@@ -1,0 +1,1 @@
+﻿export function task127() { const role='admin'; if(role === 'admin') { alert('Task 127: Admin Dashboard'); } else if(role === 'user') { alert('Task 127: User Dashboard'); } else { alert('Task 127: Guest Page'); } }

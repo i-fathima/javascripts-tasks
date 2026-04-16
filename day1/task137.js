@@ -1,0 +1,1 @@
+﻿export function task137() { const signal='green'; let action; switch(signal) { case 'red': action='STOP'; break; case 'yellow': action='WAIT'; break; case 'green': action='GO'; break; default: action='INVALID'; } alert('Task 137: '+signal+' - '+action); }

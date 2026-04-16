@@ -1,0 +1,1 @@
+﻿export function task121() { const a=10, b=20, c=30; if(a > b && a > c) { alert('Task 121: '+a+' is largest'); } else if(b > c) { alert('Task 121: '+b+' is largest'); } else { alert('Task 121: '+c+' is largest'); } }

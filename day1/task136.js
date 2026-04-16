@@ -1,0 +1,1 @@
+﻿export function task136() { const item=2; let food; switch(item) { case 1: food='Biryani'; break; case 2: food='Dosa'; break; case 3: food='Samosa'; break; case 4: food='Pizza'; break; default: food='Water'; } alert('Task 136: '+food); }

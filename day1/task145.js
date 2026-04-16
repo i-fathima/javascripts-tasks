@@ -1,0 +1,1 @@
+﻿export function task145() { const attendance=80, feesPaid=true; if(attendance >= 75 && feesPaid) { alert('Task 145: Eligible for exam'); } else if(attendance < 75) { alert('Task 145: Poor attendance'); } else { alert('Task 145: Fees not paid'); } }

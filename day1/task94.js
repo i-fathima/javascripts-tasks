@@ -1,0 +1,1 @@
+﻿export function task94() { const username = 'admin', password = 'pass123'; const validUser = 'admin', validPass = 'pass123'; alert('Task 94: Username and password correct? ' + (username === validUser && password === validPass)); }

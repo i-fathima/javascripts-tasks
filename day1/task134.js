@@ -1,0 +1,1 @@
+﻿export function task134() { const lang='Tamil'; let greeting; switch(lang) { case 'Tamil': greeting='Vanakkam'; break; case 'English': greeting='Hello'; break; case 'Hindi': greeting='Namaste'; break; default: greeting='Hi'; } alert('Task 134: '+lang+' - '+greeting); }

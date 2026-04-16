@@ -1,0 +1,1 @@
+﻿export function task130() { const balance=5000, withdrawal=2000; if(balance >= withdrawal) { alert('Task 130: Withdrawal successful. Remaining: '+(balance - withdrawal)); } else { alert('Task 130: Insufficient balance'); } }

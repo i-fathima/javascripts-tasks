@@ -1,0 +1,1 @@
+﻿export function task124() { const year=2024; if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) { alert('Task 124: '+year+' is leap year'); } else { alert('Task 124: '+year+' is not leap year'); } }

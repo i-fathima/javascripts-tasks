@@ -1,0 +1,1 @@
+﻿export function task138() { const role='manager'; let dashboard; switch(role) { case 'admin': dashboard='Admin Panel'; break; case 'manager': dashboard='Manager Panel'; break; case 'user': dashboard='User Panel'; break; default: dashboard='Access Denied'; } alert('Task 138: '+dashboard); }

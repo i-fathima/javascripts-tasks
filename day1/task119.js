@@ -1,0 +1,1 @@
+﻿export function task119() { const num=-5; if(num > 0) { alert('Task 119: '+num+' is positive'); } else if(num < 0) { alert('Task 119: '+num+' is negative'); } else { alert('Task 119: '+num+' is zero'); } }

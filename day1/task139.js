@@ -1,0 +1,1 @@
+﻿export function task139() { const browser='Chrome'; let name; switch(browser) { case 'Chrome': name='Google Chrome'; break; case 'Firefox': name='Mozilla Firefox'; break; case 'Safari': name='Apple Safari'; break; case 'Edge': name='Microsoft Edge'; break; default: name='Unknown'; } alert('Task 139: '+name); }

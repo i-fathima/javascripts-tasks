@@ -1,0 +1,1 @@
+﻿export function task150() { const age=15; let price; if(age < 5) { price = 0; } else if(age < 18) { price = 150; } else if(age < 60) { price = 300; } else { price = 200; } alert('Task 150: Ticket price = '+price); }

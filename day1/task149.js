@@ -1,0 +1,1 @@
+﻿export function task149() { const income=500000; let tax; if(income <= 250000) { tax = 0; } else if(income <= 500000) { tax = (income - 250000) * 0.05; } else { tax = 12500 + ((income - 500000) * 0.2); } alert('Task 149: Tax = '+tax); }

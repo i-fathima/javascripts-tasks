@@ -1,0 +1,1 @@
+﻿export function task128() { const username=''; if(username === '') { alert('Task 128: Username is empty'); } else if(username.length < 3) { alert('Task 128: Username too short'); } else { alert('Task 128: Username valid'); } }

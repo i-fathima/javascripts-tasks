@@ -1,0 +1,1 @@
+﻿export function task135() { const theme='dark'; let styles; switch(theme) { case 'dark': styles='Dark mode on'; break; case 'light': styles='Light mode on'; break; case 'blue': styles='Blue theme on'; break; default: styles='Default'; } alert('Task 135: '+styles); }

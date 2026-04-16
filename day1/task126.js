@@ -1,0 +1,1 @@
+﻿export function task126() { const num = 55; if (num % 5 === 0 && num % 11 === 0) { alert('Task 126: ' + num + ' is divisible by both 5 and 11'); } else if (num % 5 === 0) { alert('Task 126: ' + num + ' is divisible by 5 only'); } else { alert('Task 126: ' + num + ' is not divisible'); } }

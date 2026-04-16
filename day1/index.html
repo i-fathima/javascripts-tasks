@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Task Buttons</title>
+        <style>
+    body { font-family: Arial, sans-serif; margin: 0; min-height: 100vh; background: #f8f9fb; color: #222; }
+    header { padding: 24px; background: #2c3e50; color: white; text-align: center; }
+    main { padding: 18px; max-width: 1200px; margin: 0 auto; }
+    .button-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    button { padding: 14px 12px; border: 1px solid #3b4c63; border-radius: 8px; background: white; color: #2c3e50; font-weight: 600; cursor: pointer; text-align: left; }
+    button:hover { background: #ecf2f8; }
+    button:focus { outline: 2px solid #2980b9; }
+    .description { display: block; font-size: 0.85rem; color: #555; margin-top: 6px; }
+  </style>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Tasks</h1>
+            <p>Click a button to run the task and see the result in an alert
+                dialog.</p>
+        </header>
+        <main>
+            <div class="button-grid">
+                <button id="task01" type="button"><strong>Task 1</strong><span
+                        class="description">Declare three variables in one
+                        line.</span></button>
+                <button id="task02" type="button"><strong>Task 2</strong><span
+                        class="description">Store your age in a variable and
+                        print it.</span></button>
+                <button id="task03" type="button"><strong>Task 3</strong><span
+                        class="description">Store your city in a variable and
+                        print it.</span></button>
+                <button id="task04" type="button"><strong>Task 4</strong><span
+                        class="description">Swap two variable
+                        values.</span></button>
+                <button id="task05" type="button"><strong>Task 5</strong><span
+                        class="description">Create variables for firstName and
+                        lastName, then combine them.</span></button>
+                <button id="task06" type="button"><strong>Task 6</strong><span
+                        class="description">Create a variable without value and
+                        print it.</span></button>
+                <button id="task07" type="button"><strong>Task 7</strong><span
+                        class="description">Assign value later to an empty
+                        variable.</span></button>
+                <button id="task08" type="button"><strong>Task 8</strong><span
+                        class="description">Check the type of a let
+                        variable.</span></button>
+                <button id="task09" type="button"><strong>Task 9</strong><span
+                        class="description">Create a variable for product stock
+                        count.</span></button>
+                <button id="task10" type="button"><strong>Task 10</strong><span
+                        class="description">Update stock count after selling one
+                        item.</span></button>
+                <button id="task11" type="button"><strong>Task 11</strong><span
+                        class="description">Create a constant tax
+                        rate.</span></button>
+                <button id="task12" type="button"><strong>Task 12</strong><span
+                        class="description">Create variables for width and
+                        height.</span></button>
+                <button id="task13" type="button"><strong>Task 13</strong><span
+                        class="description">Store multiple student names in
+                        separate variables.</span></button>
+                <button id="task14" type="button"><strong>Task 14</strong><span
+                        class="description">Create a variable with camelCase
+                        naming style.</span></button>
+                <button id="task15" type="button"><strong>Task 15</strong><span
+                        class="description">Create a variable with meaningful
+                        naming.</span></button>
+                <button id="task16" type="button"><strong>Task 16</strong><span
+                        class="description">Compare let and var using same
+                        variable name.</span></button>
+                <button id="task17" type="button"><strong>Task 17</strong><span
+                        class="description">Create a variable for login
+                        status.</span></button>
+                <button id="task18" type="button"><strong>Task 18</strong><span
+                        class="description">Update login status from false to
+                        true.</span></button>
+                <button id="task19" type="button"><strong>Task 19</strong><span
+                        class="description">Create variables for day, month,
+                        year.</span></button>
+                <button id="task20" type="button"><strong>Task 20</strong><span
+                        class="description">Print all created variables
+                        together.</span></button>
+                <button id="task21" type="button"><strong>Task 21</strong><span
+                        class="description">Create a string variable for your
+                        name.</span></button>
+                <button id="task22" type="button"><strong>Task 22</strong><span
+                        class="description">Create a string for email
+                        address.</span></button>
+                <button id="task23" type="button"><strong>Task 23</strong><span
+                        class="description">Combine two strings using
+                        +.</span></button>
+                <button id="task24" type="button"><strong>Task 24</strong><span
+                        class="description">Use template literals with
+                        variables.</span></button>
+                <button id="task25" type="button"><strong>Task 25</strong><span
+                        class="description">Find length of a
+                        string.</span></button>
+                <button id="task26" type="button"><strong>Task 26</strong><span
+                        class="description">Convert a string to
+                        uppercase.</span></button>
+                <button id="task27" type="button"><strong>Task 27</strong><span
+                        class="description">Convert a string to
+                        lowercase.</span></button>
+                <button id="task28" type="button"><strong>Task 28</strong><span
+                        class="description">Extract first character of a
+                        string.</span></button>
+                <button id="task29" type="button"><strong>Task 29</strong><span
+                        class="description">Extract last character of a
+                        string.</span></button>
+                <button id="task30" type="button"><strong>Task 30</strong><span
+                        class="description">Check type of a string
+                        variable.</span></button>
+                <button id="task31" type="button"><strong>Task 31</strong><span
+                        class="description">Store a sentence in a string
+                        variable.</span></button>
+                <button id="task32" type="button"><strong>Task 32</strong><span
+                        class="description">Add spaces between two words using
+                        concatenation.</span></button>
+                <button id="task33" type="button"><strong>Task 33</strong><span
+                        class="description">Create a password string
+                        variable.</span></button>
+                <button id="task34" type="button"><strong>Task 34</strong><span
+                        class="description">Replace a word inside a
+                        string.</span></button>
+                <button id="task35" type="button"><strong>Task 35</strong><span
+                        class="description">Print "Hello, User" using
+                        variable.</span></button>
+                <button id="task36" type="button"><strong>Task 36</strong><span
+                        class="description">Create a number variable for
+                        price.</span></button>
+                <button id="task37" type="button"><strong>Task 37</strong><span
+                        class="description">Create two numbers and add
+                        them.</span></button>
+                <button id="task38" type="button"><strong>Task 38</strong><span
+                        class="description">Store decimal number in
+                        variable.</span></button>
+                <button id="task39" type="button"><strong>Task 39</strong><span
+                        class="description">Check type of number
+                        variable.</span></button>
+                <button id="task40" type="button"><strong>Task 40</strong><span
+                        class="description">Calculate total price of 3
+                        items.</span></button>
+                <button id="task41" type="button"><strong>Task 41</strong><span
+                        class="description">Find average of 5
+                        numbers.</span></button>
+                <button id="task42" type="button"><strong>Task 42</strong><span
+                        class="description">Store marks and print
+                        percentage.</span></button>
+                <button id="task43" type="button"><strong>Task 43</strong><span
+                        class="description">Round a decimal
+                        number.</span></button>
+                <button id="task44" type="button"><strong>Task 44</strong><span
+                        class="description">Create a boolean variable for
+                        isLoggedIn.</span></button>
+                <button id="task45" type="button"><strong>Task 45</strong><span
+                        class="description">Create a boolean for
+                        isAdmin.</span></button>
+                <button id="task46" type="button"><strong>Task 46</strong><span
+                        class="description">Change boolean from false to
+                        true.</span></button>
+                <button id="task47" type="button"><strong>Task 47</strong><span
+                        class="description">Check type of boolean
+                        variable.</span></button>
+                <button id="task48" type="button"><strong>Task 48</strong><span
+                        class="description">Compare two numbers and store result
+                        in boolean.</span></button>
+                <button id="task49" type="button"><strong>Task 49</strong><span
+                        class="description">Check if age is above
+                        18.</span></button>
+                <button id="task50" type="button"><strong>Task 50</strong><span
+                        class="description">Create a toggle variable and flip
+                        its value.</span></button>
+                <button id="task51" type="button"><strong>Task 51</strong><span
+                        class="description">Store if product is available or
+                        not.</span></button>
+                <button id="task52" type="button"><strong>Task 52</strong><span
+                        class="description">Create a boolean for
+                        darkMode.</span></button>
+                <button id="task53" type="button"><strong>Task 53</strong><span
+                        class="description">Print message using boolean
+                        value.</span></button>
+                <button id="task54" type="button"><strong>Task 54</strong><span
+                        class="description">Create an object for student
+                        details.</span></button>
+                <button id="task55" type="button"><strong>Task 55</strong><span
+                        class="description">Create an object for product
+                        details.</span></button>
+                <button id="task56" type="button"><strong>Task 56</strong><span
+                        class="description">Access object property using dot
+                        notation.</span></button>
+                <button id="task57" type="button"><strong>Task 57</strong><span
+                        class="description">Access object property using bracket
+                        notation.</span></button>
+                <button id="task58" type="button"><strong>Task 58</strong><span
+                        class="description">Delete a property from
+                        object.</span></button>
+                <button id="task59" type="button"><strong>Task 59</strong><span
+                        class="description">Check type of object using
+                        typeof.</span></button>
+                <button id="task60" type="button"><strong>Task 60</strong><span
+                        class="description">Create an array of 5 fruits and
+                        print it.</span></button>
+                <button id="task61" type="button"><strong>Task 61</strong><span
+                        class="description">Create variables with null and
+                        undefined, then check their types.</span></button>
+                <button id="task62" type="button"><strong>Task 62</strong><span
+                        class="description">Create an array of 3 colors and
+                        print it.</span></button>
+                <button id="task63" type="button"><strong>Task 63</strong><span
+                        class="description">Create an array of 5 numbers and
+                        print it.</span></button>
+                <button id="task64" type="button"><strong>Task 64</strong><span
+                        class="description">Store mixed data types inside an
+                        array.</span></button>
+                <button id="task65" type="button"><strong>Task 65</strong><span
+                        class="description">Create an empty array and add values
+                        later.</span></button>
+                <button id="task66" type="button"><strong>Task 66</strong><span
+                        class="description">Check the type of an array using
+                        typeof.</span></button>
+                <button id="task67" type="button"><strong>Task 67</strong><span
+                        class="description">Create an array of student
+                        names.</span></button>
+                <button id="task68" type="button"><strong>Task 68</strong><span
+                        class="description">Create a variable with null and
+                        print it.</span></button>
+                <button id="task69" type="button"><strong>Task 69</strong><span
+                        class="description">Check type of a null
+                        variable.</span></button>
+                <button id="task70" type="button"><strong>Task 70</strong><span
+                        class="description">Assign null to a user profile
+                        picture variable.</span></button>
+                <button id="task71" type="button"><strong>Task 71</strong><span
+                        class="description">Change a normal value to
+                        null.</span></button>
+                <button id="task72" type="button"><strong>Task 72</strong><span
+                        class="description">Create a variable without assigning
+                        value.</span></button>
+                <button id="task73" type="button"><strong>Task 73</strong><span
+                        class="description">Print an unassigned
+                        variable.</span></button>
+                <button id="task74" type="button"><strong>Task 74</strong><span
+                        class="description">Check type of an undefined
+                        variable.</span></button>
+                <button id="task75" type="button"><strong>Task 75</strong><span
+                        class="description">Assign value later to an undefined
+                        variable.</span></button>
+            </div>
+        </main>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

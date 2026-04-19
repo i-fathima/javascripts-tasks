@@ -1,0 +1,1 @@
+export function task202() { const text='javascript'; const vowels='aeiou'; let count=0; let i=0; while (i < text.length) { if (vowels.includes(text[i].toLowerCase())) count++; i++; } alert('Task 202: Vowels = ' + count); }

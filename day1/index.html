@@ -1,182 +1,686 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JavaScript Tasks - Day 1 (Part 1 & 2)</title>
-        <style>
-    body { font-family: Arial, sans-serif; margin: 0; min-height: 100vh; background: #f8f9fb; color: #222; }
-    header { padding: 24px; background: #2c3e50; color: white; text-align: center; }
-    .section-header { padding: 16px 18px; background: #34495e; color: white; text-align: left; font-weight: bold; margin-top: 24px; }
-    main { padding: 18px; max-width: 1200px; margin: 0 auto; }
-    .button-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-    button { padding: 14px 12px; border: 1px solid #3b4c63; border-radius: 8px; background: white; color: #2c3e50; font-weight: 600; cursor: pointer; text-align: left; }
-    button:hover { background: #ecf2f8; }
-    button:focus { outline: 2px solid #2980b9; }
-    .description { display: block; font-size: 0.85rem; color: #555; margin-top: 6px; }
-  </style>
-    </head>
-    <body>
-        <header>
-            <h1>JavaScript Tasks - Day 1</h1>
-            <p>Parts 1 & 2: Click a button to run the task and see the result in alert dialog.</p>
-        </header>
-        <main>
-            <div class="section-header">PART 1: Variables, Strings, Numbers, Booleans, Objects & Arrays (Tasks 1-75)</div>
-            <div class="button-grid">                <button id="task01" type="button"><strong>Task 1</strong><span class="description">Declare three variables in one line</span></button>
-                <button id="task02" type="button"><strong>Task 2</strong><span class="description">Store your age in a variable and print it</span></button>
-                <button id="task03" type="button"><strong>Task 3</strong><span class="description">Store your city in a variable and print it</span></button>
-                <button id="task04" type="button"><strong>Task 4</strong><span class="description">Swap two variable values</span></button>
-                <button id="task05" type="button"><strong>Task 5</strong><span class="description">Create variables for firstName and lastName, then combine them</span></button>
-                <button id="task06" type="button"><strong>Task 6</strong><span class="description">Create a variable without value and print it</span></button>
-                <button id="task07" type="button"><strong>Task 7</strong><span class="description">Assign value later to an empty variable</span></button>
-                <button id="task08" type="button"><strong>Task 8</strong><span class="description">Check the type of a let variable</span></button>
-                <button id="task09" type="button"><strong>Task 9</strong><span class="description">Create a variable for product stock count</span></button>
-                <button id="task10" type="button"><strong>Task 10</strong><span class="description">Update stock count after selling one item</span></button>
-                <button id="task11" type="button"><strong>Task 11</strong><span class="description">Create a constant tax rate</span></button>
-                <button id="task12" type="button"><strong>Task 12</strong><span class="description">Create variables for width and height</span></button>
-                <button id="task13" type="button"><strong>Task 13</strong><span class="description">Store multiple student names in separate variables</span></button>
-                <button id="task14" type="button"><strong>Task 14</strong><span class="description">Create a variable with camelCase naming style</span></button>
-                <button id="task15" type="button"><strong>Task 15</strong><span class="description">Create a variable with meaningful naming</span></button>
-                <button id="task16" type="button"><strong>Task 16</strong><span class="description">Compare let and var using same variable name</span></button>
-                <button id="task17" type="button"><strong>Task 17</strong><span class="description">Create a variable for login status</span></button>
-                <button id="task18" type="button"><strong>Task 18</strong><span class="description">Update login status from false to true</span></button>
-                <button id="task19" type="button"><strong>Task 19</strong><span class="description">Create variables for day, month, year</span></button>
-                <button id="task20" type="button"><strong>Task 20</strong><span class="description">Print all created variables together</span></button>
-                <button id="task21" type="button"><strong>Task 21</strong><span class="description">Create a string variable for your name</span></button>
-                <button id="task22" type="button"><strong>Task 22</strong><span class="description">Create a string for email address</span></button>
-                <button id="task23" type="button"><strong>Task 23</strong><span class="description">Combine two strings using +</span></button>
-                <button id="task24" type="button"><strong>Task 24</strong><span class="description">Use template literals with variables</span></button>
-                <button id="task25" type="button"><strong>Task 25</strong><span class="description">Find length of a string</span></button>
-                <button id="task26" type="button"><strong>Task 26</strong><span class="description">Convert a string to uppercase</span></button>
-                <button id="task27" type="button"><strong>Task 27</strong><span class="description">Convert a string to lowercase</span></button>
-                <button id="task28" type="button"><strong>Task 28</strong><span class="description">Extract first character of a string</span></button>
-                <button id="task29" type="button"><strong>Task 29</strong><span class="description">Extract last character of a string</span></button>
-                <button id="task30" type="button"><strong>Task 30</strong><span class="description">Check type of a string variable</span></button>
-                <button id="task31" type="button"><strong>Task 31</strong><span class="description">Store a sentence in a string variable</span></button>
-                <button id="task32" type="button"><strong>Task 32</strong><span class="description">Add spaces between two words using concatenation</span></button>
-                <button id="task33" type="button"><strong>Task 33</strong><span class="description">Create a password string variable</span></button>
-                <button id="task34" type="button"><strong>Task 34</strong><span class="description">Replace a word inside a string</span></button>
-                <button id="task35" type="button"><strong>Task 35</strong><span class="description">Print greeting using variable</span></button>
-                <button id="task36" type="button"><strong>Task 36</strong><span class="description">Create a number variable for price</span></button>
-                <button id="task37" type="button"><strong>Task 37</strong><span class="description">Create two numbers and add them</span></button>
-                <button id="task38" type="button"><strong>Task 38</strong><span class="description">Store decimal number in variable</span></button>
-                <button id="task39" type="button"><strong>Task 39</strong><span class="description">Check type of number variable</span></button>
-                <button id="task40" type="button"><strong>Task 40</strong><span class="description">Calculate total price of 3 items</span></button>
-                <button id="task41" type="button"><strong>Task 41</strong><span class="description">Find average of 5 numbers</span></button>
-                <button id="task42" type="button"><strong>Task 42</strong><span class="description">Store marks and print percentage</span></button>
-                <button id="task43" type="button"><strong>Task 43</strong><span class="description">Round a decimal number</span></button>
-                <button id="task44" type="button"><strong>Task 44</strong><span class="description">Create a boolean variable for isLoggedIn</span></button>
-                <button id="task45" type="button"><strong>Task 45</strong><span class="description">Create a boolean for isAdmin</span></button>
-                <button id="task46" type="button"><strong>Task 46</strong><span class="description">Change boolean from false to true</span></button>
-                <button id="task47" type="button"><strong>Task 47</strong><span class="description">Check type of boolean variable</span></button>
-                <button id="task48" type="button"><strong>Task 48</strong><span class="description">Compare two numbers and store result in boolean</span></button>
-                <button id="task49" type="button"><strong>Task 49</strong><span class="description">Check if age is above 18</span></button>
-                <button id="task50" type="button"><strong>Task 50</strong><span class="description">Create a toggle variable and flip its value</span></button>
-                <button id="task51" type="button"><strong>Task 51</strong><span class="description">Store if product is available or not</span></button>
-                <button id="task52" type="button"><strong>Task 52</strong><span class="description">Create a boolean for darkMode</span></button>
-                <button id="task53" type="button"><strong>Task 53</strong><span class="description">Print message using boolean value</span></button>
-                <button id="task54" type="button"><strong>Task 54</strong><span class="description">Create an object for student details</span></button>
-                <button id="task55" type="button"><strong>Task 55</strong><span class="description">Create an object for product details</span></button>
-                <button id="task56" type="button"><strong>Task 56</strong><span class="description">Access object property using dot notation</span></button>
-                <button id="task57" type="button"><strong>Task 57</strong><span class="description">Access object property using bracket notation</span></button>
-                <button id="task58" type="button"><strong>Task 58</strong><span class="description">Delete a property from object</span></button>
-                <button id="task59" type="button"><strong>Task 59</strong><span class="description">Check type of object using typeof</span></button>
-                <button id="task60" type="button"><strong>Task 60</strong><span class="description">Create an array of 5 fruits and print it</span></button>
-                <button id="task61" type="button"><strong>Task 61</strong><span class="description">Create variables with null and undefined, then check their types</span></button>
-                <button id="task62" type="button"><strong>Task 62</strong><span class="description">Create an array of 3 colors and print it</span></button>
-                <button id="task63" type="button"><strong>Task 63</strong><span class="description">Create an array of 5 numbers and print it</span></button>
-                <button id="task64" type="button"><strong>Task 64</strong><span class="description">Store mixed data types inside an array</span></button>
-                <button id="task65" type="button"><strong>Task 65</strong><span class="description">Create an empty array and add values later</span></button>
-                <button id="task66" type="button"><strong>Task 66</strong><span class="description">Check the type of an array using typeof</span></button>
-                <button id="task67" type="button"><strong>Task 67</strong><span class="description">Create an array of student names</span></button>
-                <button id="task68" type="button"><strong>Task 68</strong><span class="description">Create a variable with null and print it</span></button>
-                <button id="task69" type="button"><strong>Task 69</strong><span class="description">Check type of a null variable</span></button>
-                <button id="task70" type="button"><strong>Task 70</strong><span class="description">Assign null to a user profile picture variable</span></button>
-                <button id="task71" type="button"><strong>Task 71</strong><span class="description">Change a normal value to null</span></button>
-                <button id="task72" type="button"><strong>Task 72</strong><span class="description">Create a variable without assigning value</span></button>
-                <button id="task73" type="button"><strong>Task 73</strong><span class="description">Print an unassigned variable</span></button>
-                <button id="task74" type="button"><strong>Task 74</strong><span class="description">Check type of an undefined variable</span></button>
-                <button id="task75" type="button"><strong>Task 75</strong><span class="description">Assign value later to an undefined variable</span></button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks - Day 1 (Parts 1, 2 & 3)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: #f8f2fb;
+            color: #222;
+        }
+
+        .part {
+            margin-bottom: 32px;
+        }
+
+        header {
+            padding: 24px;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .section-header {
+            padding: 16px 18px;
+            background: #34495e;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 24px;
+        }
+
+        main {
+            padding: 18px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        button {
+            padding: 14px 12px;
+            border: 1px solid #3b4c63;
+            border-radius: 8px;
+            background: white;
+            color: #2c3e50;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        button:hover {
+            background: #ecf2f8;
+        }
+
+        button:focus {
+            outline: 2px solid #2980b9;
+        }
+
+        .description {
+            display: block;
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Tasks - Day 1</h1>
+        <p>Parts 1, 2 & 3: Click a button to run the task and see the result in alert dialog.</p>
+    </header>
+    <main>
+        <section class="part">
+            <div class="section-header">PART 1: Variables, Strings, Numbers, Booleans, Objects & Arrays (Tasks 1-75)
             </div>
+            <div class="button-grid"> <button id="task01" type="button"><strong>Task 1</strong><span
+                        class="description">Declare three variables in one line</span></button>
+                <button id="task02" type="button"><strong>Task 2</strong><span class="description">Store your age in a
+                        variable and print it</span></button>
+                <button id="task03" type="button"><strong>Task 3</strong><span class="description">Store your city in a
+                        variable and print it</span></button>
+                <button id="task04" type="button"><strong>Task 4</strong><span class="description">Swap two variable
+                        values</span></button>
+                <button id="task05" type="button"><strong>Task 5</strong><span class="description">Create variables for
+                        firstName and lastName, then combine them</span></button>
+                <button id="task06" type="button"><strong>Task 6</strong><span class="description">Create a variable
+                        without
+                        value and print it</span></button>
+                <button id="task07" type="button"><strong>Task 7</strong><span class="description">Assign value later to
+                        an
+                        empty variable</span></button>
+                <button id="task08" type="button"><strong>Task 8</strong><span class="description">Check the type of a
+                        let
+                        variable</span></button>
+                <button id="task09" type="button"><strong>Task 9</strong><span class="description">Create a variable for
+                        product stock count</span></button>
+                <button id="task10" type="button"><strong>Task 10</strong><span class="description">Update stock count
+                        after
+                        selling one item</span></button>
+                <button id="task11" type="button"><strong>Task 11</strong><span class="description">Create a constant
+                        tax
+                        rate</span></button>
+                <button id="task12" type="button"><strong>Task 12</strong><span class="description">Create variables for
+                        width and height</span></button>
+                <button id="task13" type="button"><strong>Task 13</strong><span class="description">Store multiple
+                        student
+                        names in separate variables</span></button>
+                <button id="task14" type="button"><strong>Task 14</strong><span class="description">Create a variable
+                        with
+                        camelCase naming style</span></button>
+                <button id="task15" type="button"><strong>Task 15</strong><span class="description">Create a variable
+                        with
+                        meaningful naming</span></button>
+                <button id="task16" type="button"><strong>Task 16</strong><span class="description">Compare let and var
+                        using same variable name</span></button>
+                <button id="task17" type="button"><strong>Task 17</strong><span class="description">Create a variable
+                        for
+                        login status</span></button>
+                <button id="task18" type="button"><strong>Task 18</strong><span class="description">Update login status
+                        from
+                        false to true</span></button>
+                <button id="task19" type="button"><strong>Task 19</strong><span class="description">Create variables for
+                        day, month, year</span></button>
+                <button id="task20" type="button"><strong>Task 20</strong><span class="description">Print all created
+                        variables together</span></button>
+                <button id="task21" type="button"><strong>Task 21</strong><span class="description">Create a string
+                        variable
+                        for your name</span></button>
+                <button id="task22" type="button"><strong>Task 22</strong><span class="description">Create a string for
+                        email address</span></button>
+                <button id="task23" type="button"><strong>Task 23</strong><span class="description">Combine two strings
+                        using +</span></button>
+                <button id="task24" type="button"><strong>Task 24</strong><span class="description">Use template
+                        literals
+                        with variables</span></button>
+                <button id="task25" type="button"><strong>Task 25</strong><span class="description">Find length of a
+                        string</span></button>
+                <button id="task26" type="button"><strong>Task 26</strong><span class="description">Convert a string to
+                        uppercase</span></button>
+                <button id="task27" type="button"><strong>Task 27</strong><span class="description">Convert a string to
+                        lowercase</span></button>
+                <button id="task28" type="button"><strong>Task 28</strong><span class="description">Extract first
+                        character
+                        of a string</span></button>
+                <button id="task29" type="button"><strong>Task 29</strong><span class="description">Extract last
+                        character
+                        of a string</span></button>
+                <button id="task30" type="button"><strong>Task 30</strong><span class="description">Check type of a
+                        string
+                        variable</span></button>
+                <button id="task31" type="button"><strong>Task 31</strong><span class="description">Store a sentence in
+                        a
+                        string variable</span></button>
+                <button id="task32" type="button"><strong>Task 32</strong><span class="description">Add spaces between
+                        two
+                        words using concatenation</span></button>
+                <button id="task33" type="button"><strong>Task 33</strong><span class="description">Create a password
+                        string
+                        variable</span></button>
+                <button id="task34" type="button"><strong>Task 34</strong><span class="description">Replace a word
+                        inside a
+                        string</span></button>
+                <button id="task35" type="button"><strong>Task 35</strong><span class="description">Print greeting using
+                        variable</span></button>
+                <button id="task36" type="button"><strong>Task 36</strong><span class="description">Create a number
+                        variable
+                        for price</span></button>
+                <button id="task37" type="button"><strong>Task 37</strong><span class="description">Create two numbers
+                        and
+                        add them</span></button>
+                <button id="task38" type="button"><strong>Task 38</strong><span class="description">Store decimal number
+                        in
+                        variable</span></button>
+                <button id="task39" type="button"><strong>Task 39</strong><span class="description">Check type of number
+                        variable</span></button>
+                <button id="task40" type="button"><strong>Task 40</strong><span class="description">Calculate total
+                        price of
+                        3 items</span></button>
+                <button id="task41" type="button"><strong>Task 41</strong><span class="description">Find average of 5
+                        numbers</span></button>
+                <button id="task42" type="button"><strong>Task 42</strong><span class="description">Store marks and
+                        print
+                        percentage</span></button>
+                <button id="task43" type="button"><strong>Task 43</strong><span class="description">Round a decimal
+                        number</span></button>
+                <button id="task44" type="button"><strong>Task 44</strong><span class="description">Create a boolean
+                        variable for isLoggedIn</span></button>
+                <button id="task45" type="button"><strong>Task 45</strong><span class="description">Create a boolean for
+                        isAdmin</span></button>
+                <button id="task46" type="button"><strong>Task 46</strong><span class="description">Change boolean from
+                        false to true</span></button>
+                <button id="task47" type="button"><strong>Task 47</strong><span class="description">Check type of
+                        boolean
+                        variable</span></button>
+                <button id="task48" type="button"><strong>Task 48</strong><span class="description">Compare two numbers
+                        and
+                        store result in boolean</span></button>
+                <button id="task49" type="button"><strong>Task 49</strong><span class="description">Check if age is
+                        above
+                        18</span></button>
+                <button id="task50" type="button"><strong>Task 50</strong><span class="description">Create a toggle
+                        variable
+                        and flip its value</span></button>
+                <button id="task51" type="button"><strong>Task 51</strong><span class="description">Store if product is
+                        available or not</span></button>
+                <button id="task52" type="button"><strong>Task 52</strong><span class="description">Create a boolean for
+                        darkMode</span></button>
+                <button id="task53" type="button"><strong>Task 53</strong><span class="description">Print message using
+                        boolean value</span></button>
+                <button id="task54" type="button"><strong>Task 54</strong><span class="description">Create an object for
+                        student details</span></button>
+                <button id="task55" type="button"><strong>Task 55</strong><span class="description">Create an object for
+                        product details</span></button>
+                <button id="task56" type="button"><strong>Task 56</strong><span class="description">Access object
+                        property
+                        using dot notation</span></button>
+                <button id="task57" type="button"><strong>Task 57</strong><span class="description">Access object
+                        property
+                        using bracket notation</span></button>
+                <button id="task58" type="button"><strong>Task 58</strong><span class="description">Delete a property
+                        from
+                        object</span></button>
+                <button id="task59" type="button"><strong>Task 59</strong><span class="description">Check type of object
+                        using typeof</span></button>
+                <button id="task60" type="button"><strong>Task 60</strong><span class="description">Create an array of 5
+                        fruits and print it</span></button>
+                <button id="task61" type="button"><strong>Task 61</strong><span class="description">Create variables
+                        with
+                        null and undefined, then check their types</span></button>
+                <button id="task62" type="button"><strong>Task 62</strong><span class="description">Create an array of 3
+                        colors and print it</span></button>
+                <button id="task63" type="button"><strong>Task 63</strong><span class="description">Create an array of 5
+                        numbers and print it</span></button>
+                <button id="task64" type="button"><strong>Task 64</strong><span class="description">Store mixed data
+                        types
+                        inside an array</span></button>
+                <button id="task65" type="button"><strong>Task 65</strong><span class="description">Create an empty
+                        array
+                        and add values later</span></button>
+                <button id="task66" type="button"><strong>Task 66</strong><span class="description">Check the type of an
+                        array using typeof</span></button>
+                <button id="task67" type="button"><strong>Task 67</strong><span class="description">Create an array of
+                        student names</span></button>
+                <button id="task68" type="button"><strong>Task 68</strong><span class="description">Create a variable
+                        with
+                        null and print it</span></button>
+                <button id="task69" type="button"><strong>Task 69</strong><span class="description">Check type of a null
+                        variable</span></button>
+                <button id="task70" type="button"><strong>Task 70</strong><span class="description">Assign null to a
+                        user
+                        profile picture variable</span></button>
+                <button id="task71" type="button"><strong>Task 71</strong><span class="description">Change a normal
+                        value to
+                        null</span></button>
+                <button id="task72" type="button"><strong>Task 72</strong><span class="description">Create a variable
+                        without assigning value</span></button>
+                <button id="task73" type="button"><strong>Task 73</strong><span class="description">Print an unassigned
+                        variable</span></button>
+                <button id="task74" type="button"><strong>Task 74</strong><span class="description">Check type of an
+                        undefined variable</span></button>
+                <button id="task75" type="button"><strong>Task 75</strong><span class="description">Assign value later
+                        to an
+                        undefined variable</span></button>
+            </div>
+        </section>
+        <section class="part">
             <div class="section-header">PART 2: Arithmetic, Operators, Conditionals & Control Flow (Tasks 76-150)</div>
-            <div class="button-grid">                <button id="task76" type="button"><strong>Task 76</strong><span class="description">Create two numbers and print sum, difference, product, division</span></button>
-                <button id="task77" type="button"><strong>Task 77</strong><span class="description">Find the remainder when 45 is divided by 7</span></button>
-                <button id="task78" type="button"><strong>Task 78</strong><span class="description">Swap two variables using arithmetic operators only</span></button>
-                <button id="task79" type="button"><strong>Task 79</strong><span class="description">Check if a number is even or odd using %</span></button>
-                <button id="task80" type="button"><strong>Task 80</strong><span class="description">Find the square of a number using *</span></button>
-                <button id="task81" type="button"><strong>Task 81</strong><span class="description">Calculate simple interest using operators</span></button>
-                <button id="task82" type="button"><strong>Task 82</strong><span class="description">Convert Celsius to Fahrenheit</span></button>
-                <button id="task83" type="button"><strong>Task 83</strong><span class="description">Convert kilometers to meters and centimeters</span></button>
-                <button id="task84" type="button"><strong>Task 84</strong><span class="description">Find the average of 5 marks using + and /</span></button>
-                <button id="task85" type="button"><strong>Task 85</strong><span class="description">Increment a counter variable 10 times using ++</span></button>
-                <button id="task86" type="button"><strong>Task 86</strong><span class="description">Decrement stock quantity using --</span></button>
-                <button id="task87" type="button"><strong>Task 87</strong><span class="description">Compare two numbers using >, <, >=, <=</span></button>
-                <button id="task88" type="button"><strong>Task 88</strong><span class="description">Check if two strings are equal using ==</span></button>
-                <button id="task89" type="button"><strong>Task 89</strong><span class="description">Check strict equality between 5 and '5' using ===</span></button>
-                <button id="task90" type="button"><strong>Task 90</strong><span class="description">Check if two values are not equal using !=</span></button>
-                <button id="task91" type="button"><strong>Task 91</strong><span class="description">Check strict inequality using !==</span></button>
-                <button id="task92" type="button"><strong>Task 92</strong><span class="description">Verify if age is greater than or equal to 18</span></button>
-                <button id="task93" type="button"><strong>Task 93</strong><span class="description">Check if salary is less than 30000</span></button>
-                <button id="task94" type="button"><strong>Task 94</strong><span class="description">Use && to check username and password</span></button>
-                <button id="task95" type="button"><strong>Task 95</strong><span class="description">Use || to check if user is admin or manager</span></button>
-                <button id="task96" type="button"><strong>Task 96</strong><span class="description">Check if number lies between 10 and 50 using logical operators</span></button>
-                <button id="task97" type="button"><strong>Task 97</strong><span class="description">Validate if marks are above 35 and attendance above 75%</span></button>
-                <button id="task98" type="button"><strong>Task 98</strong><span class="description">Check if item is in stock and user has money</span></button>
-                <button id="task99" type="button"><strong>Task 99</strong><span class="description">Use ! to reverse a boolean value</span></button>
-                <button id="task100" type="button"><strong>Task 100</strong><span class="description">Create login status toggle using !</span></button>
-                <button id="task101" type="button"><strong>Task 101</strong><span class="description">Use ternary operator to check pass/fail</span></button>
-                <button id="task102" type="button"><strong>Task 102</strong><span class="description">Use ternary operator to find bigger of two numbers</span></button>
-                <button id="task103" type="button"><strong>Task 103</strong><span class="description">Use ternary operator to check even/odd</span></button>
-                <button id="task104" type="button"><strong>Task 104</strong><span class="description">Use ternary for free delivery if cart total > 500</span></button>
-                <button id="task105" type="button"><strong>Task 105</strong><span class="description">Apply 20% discount if coupon exists using ternary</span></button>
-                <button id="task106" type="button"><strong>Task 106</strong><span class="description">Check if a year is leap year using operators</span></button>
-                <button id="task107" type="button"><strong>Task 107</strong><span class="description">Find the largest of three numbers using comparison</span></button>
-                <button id="task108" type="button"><strong>Task 108</strong><span class="description">Calculate electricity bill units × rate</span></button>
-                <button id="task109" type="button"><strong>Task 109</strong><span class="description">Check if password length is exactly 8 using ===</span></button>
-                <button id="task110" type="button"><strong>Task 110</strong><span class="description">Compare two ages and print older person</span></button>
-                <button id="task111" type="button"><strong>Task 111</strong><span class="description">Find total seconds from hours, minutes, seconds</span></button>
-                <button id="task112" type="button"><strong>Task 112</strong><span class="description">Calculate BMI using weight and height</span></button>
-                <button id="task113" type="button"><strong>Task 113</strong><span class="description">Check if temperature is below zero</span></button>
-                <button id="task114" type="button"><strong>Task 114</strong><span class="description">Use nested ternary to classify marks: Fail/Pass/Distinction</span></button>
-                <button id="task115" type="button"><strong>Task 115</strong><span class="description">Check if number is positive, negative, or zero using ternary</span></button>
-                <button id="task116" type="button"><strong>Task 116</strong><span class="description">Check if a person can vote using if</span></button>
-                <button id="task117" type="button"><strong>Task 117</strong><span class="description">Check if a user is logged in using if-else</span></button>
-                <button id="task118" type="button"><strong>Task 118</strong><span class="description">Print 'Adult' or 'Minor' based on age</span></button>
-                <button id="task119" type="button"><strong>Task 119</strong><span class="description">Check if number is positive, negative, or zero using if-else</span></button>
-                <button id="task120" type="button"><strong>Task 120</strong><span class="description">Find bigger of two numbers using if-else</span></button>
-                <button id="task121" type="button"><strong>Task 121</strong><span class="description">Find largest of three numbers using if-else if</span></button>
-                <button id="task122" type="button"><strong>Task 122</strong><span class="description">Check if marks are pass, fail, or distinction</span></button>
-                <button id="task123" type="button"><strong>Task 123</strong><span class="description">Grade system: A, B, C, D, Fail</span></button>
-                <button id="task124" type="button"><strong>Task 124</strong><span class="description">Check if year is leap year using if-else</span></button>
-                <button id="task125" type="button"><strong>Task 125</strong><span class="description">Check if character is vowel or consonant</span></button>
-                <button id="task126" type="button"><strong>Task 126</strong><span class="description">Check if number is divisible by 5 and 11</span></button>
-                <button id="task127" type="button"><strong>Task 127</strong><span class="description">Login system: admin/user/guest page display</span></button>
-                <button id="task128" type="button"><strong>Task 128</strong><span class="description">Check if username is empty or valid</span></button>
-                <button id="task129" type="button"><strong>Task 129</strong><span class="description">Check if password is strong or weak</span></button>
-                <button id="task130" type="button"><strong>Task 130</strong><span class="description">ATM withdrawal: balance sufficient or insufficient</span></button>
-                <button id="task131" type="button"><strong>Task 131</strong><span class="description">Shopping cart: free shipping if amount > 1000 else charge 100</span></button>
-                <button id="task132" type="button"><strong>Task 132</strong><span class="description">Electricity bill with different slabs using if-else if</span></button>
-                <button id="task133" type="button"><strong>Task 133</strong><span class="description">Income tax calculation with slabs</span></button>
-                <button id="task134" type="button"><strong>Task 134</strong><span class="description">Movie ticket pricing based on age</span></button>
-                <button id="task135" type="button"><strong>Task 135</strong><span class="description">Check if today is weekend or weekday using switch</span></button>
-                <button id="task136" type="button"><strong>Task 136</strong><span class="description">Display month name using month number with switch</span></button>
-                <button id="task137" type="button"><strong>Task 137</strong><span class="description">Display number of days in a month using switch</span></button>
-                <button id="task138" type="button"><strong>Task 138</strong><span class="description">Language switcher: Tamil/English/Hindi</span></button>
-                <button id="task139" type="button"><strong>Task 139</strong><span class="description">Theme changer: dark/light/blue using switch</span></button>
-                <button id="task140" type="button"><strong>Task 140</strong><span class="description">Food menu selection using switch-case</span></button>
-                <button id="task141" type="button"><strong>Task 141</strong><span class="description">Traffic signal action using switch</span></button>
-                <button id="task142" type="button"><strong>Task 142</strong><span class="description">Role-based dashboard using switch</span></button>
-                <button id="task143" type="button"><strong>Task 143</strong><span class="description">Print browser name using switch</span></button>
-                <button id="task144" type="button"><strong>Task 144</strong><span class="description">Check season based on month using switch</span></button>
-                <button id="task145" type="button"><strong>Task 145</strong><span class="description">Use ternary to check if user gets bonus</span></button>
-                <button id="task146" type="button"><strong>Task 146</strong><span class="description">Use ternary to show 'Online' or 'Offline'</span></button>
-                <button id="task147" type="button"><strong>Task 147</strong><span class="description">Use ternary to check if stock is available</span></button>
-                <button id="task148" type="button"><strong>Task 148</strong><span class="description">Use nested if for exam eligibility (attendance + fees paid)</span></button>
-                <button id="task149" type="button"><strong>Task 149</strong><span class="description">Build mini calculator using switch-case for +−*/</span></button>
+            <div class="button-grid"> <button id="task76" type="button"><strong>Task 76</strong><span
+                        class="description">Create two numbers and print sum, difference, product,
+                        division</span></button>
+                <button id="task77" type="button"><strong>Task 77</strong><span class="description">Find the remainder
+                        when
+                        45 is divided by 7</span></button>
+                <button id="task78" type="button"><strong>Task 78</strong><span class="description">Swap two variables
+                        using
+                        arithmetic operators only</span></button>
+                <button id="task79" type="button"><strong>Task 79</strong><span class="description">Check if a number is
+                        even or odd using %</span></button>
+                <button id="task80" type="button"><strong>Task 80</strong><span class="description">Find the square of a
+                        number using *</span></button>
+                <button id="task81" type="button"><strong>Task 81</strong><span class="description">Calculate simple
+                        interest using operators</span></button>
+                <button id="task82" type="button"><strong>Task 82</strong><span class="description">Convert Celsius to
+                        Fahrenheit</span></button>
+                <button id="task83" type="button"><strong>Task 83</strong><span class="description">Convert kilometers
+                        to
+                        meters and centimeters</span></button>
+                <button id="task84" type="button"><strong>Task 84</strong><span class="description">Find the average of
+                        5
+                        marks using + and /</span></button>
+                <button id="task85" type="button"><strong>Task 85</strong><span class="description">Increment a counter
+                        variable 10 times using ++</span></button>
+                <button id="task86" type="button"><strong>Task 86</strong><span class="description">Decrement stock
+                        quantity
+                        using --</span></button>
+                <button id="task87" type="button"><strong>Task 87</strong><span class="description">Compare two numbers
+                        using >, <,>=, <=< /span></button>
+                <button id="task88" type="button"><strong>Task 88</strong><span class="description">Check if two strings
+                        are
+                        equal using ==</span></button>
+                <button id="task89" type="button"><strong>Task 89</strong><span class="description">Check strict
+                        equality
+                        between 5 and '5' using ===</span></button>
+                <button id="task90" type="button"><strong>Task 90</strong><span class="description">Check if two values
+                        are
+                        not equal using !=</span></button>
+                <button id="task91" type="button"><strong>Task 91</strong><span class="description">Check strict
+                        inequality
+                        using !==</span></button>
+                <button id="task92" type="button"><strong>Task 92</strong><span class="description">Verify if age is
+                        greater
+                        than or equal to 18</span></button>
+                <button id="task93" type="button"><strong>Task 93</strong><span class="description">Check if salary is
+                        less
+                        than 30000</span></button>
+                <button id="task94" type="button"><strong>Task 94</strong><span class="description">Use && to check
+                        username
+                        and password</span></button>
+                <button id="task95" type="button"><strong>Task 95</strong><span class="description">Use || to check if
+                        user
+                        is admin or manager</span></button>
+                <button id="task96" type="button"><strong>Task 96</strong><span class="description">Check if number lies
+                        between 10 and 50 using logical operators</span></button>
+                <button id="task97" type="button"><strong>Task 97</strong><span class="description">Validate if marks
+                        are
+                        above 35 and attendance above 75%</span></button>
+                <button id="task98" type="button"><strong>Task 98</strong><span class="description">Check if item is in
+                        stock and user has money</span></button>
+                <button id="task99" type="button"><strong>Task 99</strong><span class="description">Use ! to reverse a
+                        boolean value</span></button>
+                <button id="task100" type="button"><strong>Task 100</strong><span class="description">Create login
+                        status
+                        toggle using !</span></button>
+                <button id="task101" type="button"><strong>Task 101</strong><span class="description">Use ternary
+                        operator
+                        to check pass/fail</span></button>
+                <button id="task102" type="button"><strong>Task 102</strong><span class="description">Use ternary
+                        operator
+                        to find bigger of two numbers</span></button>
+                <button id="task103" type="button"><strong>Task 103</strong><span class="description">Use ternary
+                        operator
+                        to check even/odd</span></button>
+                <button id="task104" type="button"><strong>Task 104</strong><span class="description">Use ternary for
+                        free
+                        delivery if cart total > 500</span></button>
+                <button id="task105" type="button"><strong>Task 105</strong><span class="description">Apply 20% discount
+                        if
+                        coupon exists using ternary</span></button>
+                <button id="task106" type="button"><strong>Task 106</strong><span class="description">Check if a year is
+                        leap year using operators</span></button>
+                <button id="task107" type="button"><strong>Task 107</strong><span class="description">Find the largest
+                        of
+                        three numbers using comparison</span></button>
+                <button id="task108" type="button"><strong>Task 108</strong><span class="description">Calculate
+                        electricity
+                        bill units × rate</span></button>
+                <button id="task109" type="button"><strong>Task 109</strong><span class="description">Check if password
+                        length is exactly 8 using ===</span></button>
+                <button id="task110" type="button"><strong>Task 110</strong><span class="description">Compare two ages
+                        and
+                        print older person</span></button>
+                <button id="task111" type="button"><strong>Task 111</strong><span class="description">Find total seconds
+                        from hours, minutes, seconds</span></button>
+                <button id="task112" type="button"><strong>Task 112</strong><span class="description">Calculate BMI
+                        using
+                        weight and height</span></button>
+                <button id="task113" type="button"><strong>Task 113</strong><span class="description">Check if
+                        temperature
+                        is below zero</span></button>
+                <button id="task114" type="button"><strong>Task 114</strong><span class="description">Use nested ternary
+                        to
+                        classify marks: Fail/Pass/Distinction</span></button>
+                <button id="task115" type="button"><strong>Task 115</strong><span class="description">Check if number is
+                        positive, negative, or zero using ternary</span></button>
+                <button id="task116" type="button"><strong>Task 116</strong><span class="description">Check if a person
+                        can
+                        vote using if</span></button>
+                <button id="task117" type="button"><strong>Task 117</strong><span class="description">Check if a user is
+                        logged in using if-else</span></button>
+                <button id="task118" type="button"><strong>Task 118</strong><span class="description">Print 'Adult' or
+                        'Minor' based on age</span></button>
+                <button id="task119" type="button"><strong>Task 119</strong><span class="description">Check if number is
+                        positive, negative, or zero using if-else</span></button>
+                <button id="task120" type="button"><strong>Task 120</strong><span class="description">Find bigger of two
+                        numbers using if-else</span></button>
+                <button id="task121" type="button"><strong>Task 121</strong><span class="description">Find largest of
+                        three
+                        numbers using if-else if</span></button>
+                <button id="task122" type="button"><strong>Task 122</strong><span class="description">Check if marks are
+                        pass, fail, or distinction</span></button>
+                <button id="task123" type="button"><strong>Task 123</strong><span class="description">Grade system: A,
+                        B, C,
+                        D, Fail</span></button>
+                <button id="task124" type="button"><strong>Task 124</strong><span class="description">Check if year is
+                        leap
+                        year using if-else</span></button>
+                <button id="task125" type="button"><strong>Task 125</strong><span class="description">Check if character
+                        is
+                        vowel or consonant</span></button>
+                <button id="task126" type="button"><strong>Task 126</strong><span class="description">Check if number is
+                        divisible by 5 and 11</span></button>
+                <button id="task127" type="button"><strong>Task 127</strong><span class="description">Login system:
+                        admin/user/guest page display</span></button>
+                <button id="task128" type="button"><strong>Task 128</strong><span class="description">Check if username
+                        is
+                        empty or valid</span></button>
+                <button id="task129" type="button"><strong>Task 129</strong><span class="description">Check if password
+                        is
+                        strong or weak</span></button>
+                <button id="task130" type="button"><strong>Task 130</strong><span class="description">ATM withdrawal:
+                        balance sufficient or insufficient</span></button>
+                <button id="task131" type="button"><strong>Task 131</strong><span class="description">Shopping cart:
+                        free
+                        shipping if amount > 1000 else charge 100</span></button>
+                <button id="task132" type="button"><strong>Task 132</strong><span class="description">Electricity bill
+                        with
+                        different slabs using if-else if</span></button>
+                <button id="task133" type="button"><strong>Task 133</strong><span class="description">Income tax
+                        calculation
+                        with slabs</span></button>
+                <button id="task134" type="button"><strong>Task 134</strong><span class="description">Movie ticket
+                        pricing
+                        based on age</span></button>
+                <button id="task135" type="button"><strong>Task 135</strong><span class="description">Check if today is
+                        weekend or weekday using switch</span></button>
+                <button id="task136" type="button"><strong>Task 136</strong><span class="description">Display month name
+                        using month number with switch</span></button>
+                <button id="task137" type="button"><strong>Task 137</strong><span class="description">Display number of
+                        days
+                        in a month using switch</span></button>
+                <button id="task138" type="button"><strong>Task 138</strong><span class="description">Language switcher:
+                        Tamil/English/Hindi</span></button>
+                <button id="task139" type="button"><strong>Task 139</strong><span class="description">Theme changer:
+                        dark/light/blue using switch</span></button>
+                <button id="task140" type="button"><strong>Task 140</strong><span class="description">Food menu
+                        selection
+                        using switch-case</span></button>
+                <button id="task141" type="button"><strong>Task 141</strong><span class="description">Traffic signal
+                        action
+                        using switch</span></button>
+                <button id="task142" type="button"><strong>Task 142</strong><span class="description">Role-based
+                        dashboard
+                        using switch</span></button>
+                <button id="task143" type="button"><strong>Task 143</strong><span class="description">Print browser name
+                        using switch</span></button>
+                <button id="task144" type="button"><strong>Task 144</strong><span class="description">Check season based
+                        on
+                        month using switch</span></button>
+                <button id="task145" type="button"><strong>Task 145</strong><span class="description">Use ternary to
+                        check
+                        if user gets bonus</span></button>
+                <button id="task146" type="button"><strong>Task 146</strong><span class="description">Use ternary to
+                        show
+                        'Online' or 'Offline'</span></button>
+                <button id="task147" type="button"><strong>Task 147</strong><span class="description">Use ternary to
+                        check
+                        if stock is available</span></button>
+                <button id="task148" type="button"><strong>Task 148</strong><span class="description">Use nested if for
+                        exam
+                        eligibility (attendance + fees paid)</span></button>
+                <button id="task149" type="button"><strong>Task 149</strong><span class="description">Build mini
+                        calculator
+                        using switch-case for +−*/</span></button>
                 <button id="task150" type="button"><strong>Task 150</strong><span class="description"></span></button>
             </div>
-        </main>
-        <script type="module" src="main.js"></script>
-    </body>
+        </section>
+        <section class="part">
+            <div class="section-header">PART 3: Loops & Iteration (Tasks 151-225)</div>
+            <div class="button-grid">
+                <button id="task151" type="button"><strong>Task 151</strong><span class="description">Print numbers from
+                        1
+                        to 10</span></button>
+                <button id="task152" type="button"><strong>Task 152</strong><span class="description">Print numbers from
+                        10
+                        to 1</span></button>
+                <button id="task153" type="button"><strong>Task 153</strong><span class="description">Print even numbers
+                        from 1 to 50</span></button>
+                <button id="task154" type="button"><strong>Task 154</strong><span class="description">Print odd numbers
+                        from
+                        1 to 50</span></button>
+                <button id="task155" type="button"><strong>Task 155</strong><span class="description">Print
+                        multiplication
+                        table of 2</span></button>
+                <button id="task156" type="button"><strong>Task 156</strong><span class="description">Print
+                        multiplication
+                        table of any given number</span></button>
+                <button id="task157" type="button"><strong>Task 157</strong><span class="description">Find the sum of
+                        numbers from 1 to 100</span></button>
+                <button id="task158" type="button"><strong>Task 158</strong><span class="description">Find the sum of
+                        even
+                        numbers from 1 to 100</span></button>
+                <button id="task159" type="button"><strong>Task 159</strong><span class="description">Find the sum of
+                        odd
+                        numbers from 1 to 100</span></button>
+                <button id="task160" type="button"><strong>Task 160</strong><span class="description">Find the product
+                        of
+                        numbers from 1 to 5</span></button>
+                <button id="task161" type="button"><strong>Task 161</strong><span class="description">Print squares of
+                        numbers from 1 to 20</span></button>
+                <button id="task162" type="button"><strong>Task 162</strong><span class="description">Print cubes of
+                        numbers
+                        from 1 to 15</span></button>
+                <button id="task163" type="button"><strong>Task 163</strong><span class="description">Print numbers
+                        divisible by 3 from 1 to 100</span></button>
+                <button id="task164" type="button"><strong>Task 164</strong><span class="description">Print numbers
+                        divisible by both 3 and 5 from 1 to 100</span></button>
+                <button id="task165" type="button"><strong>Task 165</strong><span class="description">Count numbers
+                        divisible by 7 from 1 to 100</span></button>
+                <button id="task166" type="button"><strong>Task 166</strong><span class="description">Find factorial of
+                        5</span></button>
+                <button id="task167" type="button"><strong>Task 167</strong><span class="description">Find factorial of
+                        any
+                        given number</span></button>
+                <button id="task168" type="button"><strong>Task 168</strong><span class="description">Print Fibonacci
+                        series
+                        for 10 terms</span></button>
+                <button id="task169" type="button"><strong>Task 169</strong><span class="description">Reverse counting
+                        from
+                        100 to 1</span></button>
+                <button id="task170" type="button"><strong>Task 170</strong><span class="description">Print all leap
+                        years
+                        from 2000 to 2100</span></button>
+                <button id="task171" type="button"><strong>Task 171</strong><span class="description">Count total digits
+                        in
+                        a number</span></button>
+                <button id="task172" type="button"><strong>Task 172</strong><span class="description">Reverse a
+                        number</span></button>
+                <button id="task173" type="button"><strong>Task 173</strong><span class="description">Check whether a
+                        number
+                        is palindrome</span></button>
+                <button id="task174" type="button"><strong>Task 174</strong><span class="description">Find sum of digits
+                        of
+                        a number</span></button>
+                <button id="task175" type="button"><strong>Task 175</strong><span class="description">Check whether a
+                        number
+                        is Armstrong number</span></button>
+                <button id="task176" type="button"><strong>Task 176</strong><span class="description">Print ASCII values
+                        from 65 to 90</span></button>
+                <button id="task177" type="button"><strong>Task 177</strong><span class="description">Print characters A
+                        to
+                        Z</span></button>
+                <button id="task178" type="button"><strong>Task 178</strong><span class="description">Print characters a
+                        to
+                        z</span></button>
+                <button id="task179" type="button"><strong>Task 179</strong><span class="description">Count how many
+                        numbers
+                        are greater than 50 between 1 to 100</span></button>
+                <button id="task180" type="button"><strong>Task 180</strong><span class="description">Skip multiples of
+                        10
+                        from 1 to 100 and print remaining numbers</span></button>
+                <button id="task181" type="button"><strong>Task 181</strong><span class="description">Print numbers from
+                        1
+                        to 20 using while loop</span></button>
+                <button id="task182" type="button"><strong>Task 182</strong><span class="description">Print numbers from
+                        20
+                        to 1 using while loop</span></button>
+                <button id="task183" type="button"><strong>Task 183</strong><span class="description">Print even numbers
+                        from 1 to 30</span></button>
+                <button id="task184" type="button"><strong>Task 184</strong><span class="description">Print odd numbers
+                        from
+                        1 to 30</span></button>
+                <button id="task185" type="button"><strong>Task 185</strong><span class="description">Print
+                        multiplication
+                        table of 7 using while loop</span></button>
+                <button id="task186" type="button"><strong>Task 186</strong><span class="description">Find sum of first
+                        50
+                        natural numbers</span></button>
+                <button id="task187" type="button"><strong>Task 187</strong><span class="description">Find factorial of
+                        a
+                        number using while loop</span></button>
+                <button id="task188" type="button"><strong>Task 188</strong><span class="description">Reverse a number
+                        using
+                        while loop</span></button>
+                <button id="task189" type="button"><strong>Task 189</strong><span class="description">Count digits in a
+                        number using while loop</span></button>
+                <button id="task190" type="button"><strong>Task 190</strong><span class="description">Find sum of digits
+                        using while loop</span></button>
+                <button id="task191" type="button"><strong>Task 191</strong><span class="description">Check palindrome
+                        number using while loop</span></button>
+                <button id="task192" type="button"><strong>Task 192</strong><span class="description">Generate random
+                        number
+                        until it becomes greater than 90</span></button>
+                <button id="task193" type="button"><strong>Task 193</strong><span class="description">Create password
+                        until
+                        length becomes 8 characters</span></button>
+                <button id="task194" type="button"><strong>Task 194</strong><span class="description">Print Fibonacci
+                        series
+                        using while loop</span></button>
+                <button id="task195" type="button"><strong>Task 195</strong><span class="description">Print powers of 2
+                        until 1024</span></button>
+                <button id="task196" type="button"><strong>Task 196</strong><span class="description">Keep doubling a
+                        number
+                        until it exceeds 1000</span></button>
+                <button id="task197" type="button"><strong>Task 197</strong><span class="description">Find GCD of two
+                        numbers</span></button>
+                <button id="task198" type="button"><strong>Task 198</strong><span class="description">Find LCM of two
+                        numbers</span></button>
+                <button id="task199" type="button"><strong>Task 199</strong><span class="description">Print numbers
+                        divisible by 4 from 1 to 100</span></button>
+                <button id="task200" type="button"><strong>Task 200</strong><span class="description">Print countdown
+                        from
+                        10 to 0</span></button>
+                <button id="task201" type="button"><strong>Task 201</strong><span class="description">Reverse a string
+                        using
+                        while loop</span></button>
+                <button id="task202" type="button"><strong>Task 202</strong><span class="description">Count vowels in a
+                        string using while loop</span></button>
+                <button id="task203" type="button"><strong>Task 203</strong><span class="description">Remove last digit
+                        of a
+                        number one by one and print</span></button>
+                <button id="task204" type="button"><strong>Task 204</strong><span class="description">Keep subtracting 5
+                        from 100 until 0</span></button>
+                <button id="task205" type="button"><strong>Task 205</strong><span class="description">Keep adding 3
+                        until
+                        value reaches 60</span></button>
+                <button id="task206" type="button"><strong>Task 206</strong><span class="description">Print all elements
+                        in
+                        an array</span></button>
+                <button id="task207" type="button"><strong>Task 207</strong><span class="description">Print each element
+                        with index</span></button>
+                <button id="task208" type="button"><strong>Task 208</strong><span class="description">Find sum of all
+                        array
+                        elements</span></button>
+                <button id="task209" type="button"><strong>Task 209</strong><span class="description">Find average of
+                        array
+                        elements</span></button>
+                <button id="task210" type="button"><strong>Task 210</strong><span class="description">Print only even
+                        numbers from array</span></button>
+                <button id="task211" type="button"><strong>Task 211</strong><span class="description">Print only odd
+                        numbers
+                        from array</span></button>
+                <button id="task212" type="button"><strong>Task 212</strong><span class="description">Count total
+                        elements
+                        in array</span></button>
+                <button id="task213" type="button"><strong>Task 213</strong><span class="description">Multiply each
+                        element
+                        by 2 and print</span></button>
+                <button id="task214" type="button"><strong>Task 214</strong><span class="description">Print square of
+                        each
+                        element</span></button>
+                <button id="task215" type="button"><strong>Task 215</strong><span class="description">Print cube of each
+                        element</span></button>
+                <button id="task216" type="button"><strong>Task 216</strong><span class="description">Find largest
+                        number in
+                        array</span></button>
+                <button id="task217" type="button"><strong>Task 217</strong><span class="description">Find smallest
+                        number
+                        in array</span></button>
+                <button id="task218" type="button"><strong>Task 218</strong><span class="description">Count numbers
+                        greater
+                        than 25 in array</span></button>
+                <button id="task219" type="button"><strong>Task 219</strong><span class="description">Count numbers less
+                        than 50 in array</span></button>
+                <button id="task220" type="button"><strong>Task 220</strong><span class="description">Print all names in
+                        uppercase</span></button>
+                <button id="task221" type="button"><strong>Task 221</strong><span class="description">Add ₹ symbol
+                        before
+                        price values and print</span></button>
+                <button id="task222" type="button"><strong>Task 222</strong><span class="description">Print shopping
+                        cart
+                        items one by one</span></button>
+                <button id="task223" type="button"><strong>Task 223</strong><span class="description">Print student
+                        names
+                        with roll numbers</span></button>
+                <button id="task224" type="button"><strong>Task 224</strong><span class="description">Find total marks
+                        from
+                        marks array</span></button>
+                <button id="task225" type="button"><strong>Task 225</strong><span class="description">Print only string
+                        values from mixed array</span></button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+
 </html>
